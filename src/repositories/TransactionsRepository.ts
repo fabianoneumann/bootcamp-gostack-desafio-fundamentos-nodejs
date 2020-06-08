@@ -34,7 +34,7 @@ class TransactionsRepository {
       if (transaction.type === 'income') {
         balance.income += transaction.value;
       } else {
-        balance.outcome += transaction.value;
+        balance.outcome = transaction.value;
       }
     });
 
